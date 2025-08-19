@@ -1,0 +1,30 @@
+name: RevDocAdmin CI
+
+on:
+  workflow_dispatch:   # manual trigger
+  schedule:
+    - cron: "0 5 * * *"   # runs daily at 5 AM UTC
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Run Tests with Maven
+        run: mvn clean test
+
+      - name: Upload Test Reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-reports
+          path: |
+            target/cucumber-reports
+            target/ExtentReports
