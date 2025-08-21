@@ -13,7 +13,7 @@ public class LoginValidationSteps {
     WebDriver driver;
     LoginPage loginPage;
 
-    @Given("I launching the login page")
+    @Given("I open the login screen for validation")
     public void i_launch_the_login_page() {
         // Removed ConfigReader.loadProperties() because properties load statically
         driver = DriverManager.getDriver();
