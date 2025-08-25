@@ -24,7 +24,7 @@ public class DriverFactory {
 
         switch (browser) {
             case "chrome":
-                WebDriverManager.chromedriver().setup();
+                WebDriverManager.chromedriver().clearResolutionCache().setup();
                 ChromeOptions ch = new ChromeOptions();
                 ch.setPageLoadStrategy(PageLoadStrategy.NORMAL);
                 if (headless) ch.addArguments("--headless=new");
@@ -33,19 +33,28 @@ public class DriverFactory {
                 break;
 
             case "firefox":
-                WebDriverManager.firefoxdriver().setup();
+                System.setProperty("webdriver.gecko.driver",
+                    System.getProperty("user.dir") + "/src/test/resources/drivers/geckodriver.exe");
+
                 FirefoxOptions ff = new FirefoxOptions();
                 if (headless) ff.addArguments("-headless");
+                ff.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+
                 driver = new FirefoxDriver(ff);
                 driver.manage().window().maximize();
                 break;
 
+
             case "edge":
-                WebDriverManager.edgedriver().setup();
+                // Use local driver instead of downloading from internet
+                System.setProperty("webdriver.edge.driver",
+                    System.getProperty("user.dir") + "/src/test/resources/drivers/msedgedriver.exe");
+                
                 EdgeOptions ed = new EdgeOptions();
+                ed.setPageLoadStrategy(PageLoadStrategy.NORMAL);
                 if (headless) ed.addArguments("--headless=new");
+                ed.addArguments("--start-maximized", "--remote-allow-origins=*");
                 driver = new EdgeDriver(ed);
-                driver.manage().window().maximize();
                 break;
 
             default:

@@ -15,7 +15,7 @@ public class ProcedureConfigurationPage {
 	    	this.driver = driver;
 	        PageFactory.initElements(driver, this);
 	    }
-	 @FindBy(xpath = "//button[span[text()=' Add New Procedure']]") WebElement AddNewProcedrueButton;
+	 @FindBy(xpath = "//button[span[text()='+ Add New Procedure']]") WebElement AddNewProcedrueButton;
 	 @FindBy(xpath = "//input[@id = \"procedurePdf\"]") WebElement UploadPDFButton;
 
 	 public void waitdur() {
@@ -34,7 +34,7 @@ public class ProcedureConfigurationPage {
 	 
 	 public void clickingOnUploadPDFButton() {
 		 waitdur();
-		 UploadPDFButton.sendKeys("C:\\Users\\LENOVO\\Desktop\\Eclipse\\Input Test Files\\Test PDF file.pdf");
+		 UploadPDFButton.sendKeys("/RevDocAdminTestNG/src/test/resources/testfiles/Test PDF file.pdf");
 		}
 	 public boolean isPDFUploadedSuccessfully() {
 		    waitdur();
