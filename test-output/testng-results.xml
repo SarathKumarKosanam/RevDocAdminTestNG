@@ -2,26 +2,26 @@
 <testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-25T12:04:44 IST" name="Default suite" finished-at="2025-08-25T12:05:54 IST" duration-ms="70103">
+  <suite started-at="2025-08-25T12:27:34 IST" name="Default suite" finished-at="2025-08-25T12:28:48 IST" duration-ms="73673">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunnerTestNG@6c779568]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-08-25T12:04:44 IST" name="Default test" finished-at="2025-08-25T12:05:54 IST" duration-ms="70103">
+    <test started-at="2025-08-25T12:27:34 IST" name="Default test" finished-at="2025-08-25T12:28:48 IST" duration-ms="73673">
       <class name="runners.TestRunnerTestNG">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunnerTestNG@6c779568]" started-at="2025-08-25T12:04:44 IST" name="setUpClass" finished-at="2025-08-25T12:04:45 IST" duration-ms="932" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunnerTestNG@6c779568]" started-at="2025-08-25T12:27:34 IST" name="setUpClass" finished-at="2025-08-25T12:27:35 IST" duration-ms="989" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7c226095]]>
+                <![CDATA[org.testng.TestRunner@4e52d2f2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunnerTestNG@6c779568]" started-at="2025-08-25T12:04:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-25T12:05:16 IST" duration-ms="31624" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunnerTestNG@6c779568]" started-at="2025-08-25T12:27:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-25T12:28:05 IST" duration-ms="30239" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -34,26 +34,26 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.InvalidArgumentException">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[File not found: /RevDocAdminTestNG/src/test/resources/testfiles/Test PDF file.pdf
+              <![CDATA[Element <button class="ant-btn css-5uvb3z ant-btn-default ant-btn-color-default ant-btn-variant-outlined revdocButton filled" type="button"> is not clickable at point (1783,132) because another element <div class="loader"> obscures it
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [aef8c1fd-e769-4321-912d-03362b65b893, sendKeysToElement {id=cd858d10-8ca3-4e68-97b7-eff7726fcb3a, value=[Ljava.lang.CharSequence;@2b960a7}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 16968, moz:profile: C:\Users\LENOVO\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (aef8c1fd-e769-4321-912d-03362b65b893)] -> xpath: //input[@id = "procedurePdf"]]
-Session ID: aef8c1fd-e769-4321-912d-03362b65b893]]>
+Command: [e30ec8b7-57d5-49dc-913e-0406e783d157, clickElement {id=72bf3e49-9130-48fb-bd88-42ea7823d114}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6596, moz:profile: C:\Users\LENOVO\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (e30ec8b7-57d5-49dc-913e-0406e783d157)] -> xpath: //button[span[text()='+ Add New Procedure']]]
+Session ID: e30ec8b7-57d5-49dc-913e-0406e783d157]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidArgumentException: File not found: /RevDocAdminTestNG/src/test/resources/testfiles/Test PDF file.pdf
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <button class="ant-btn css-5uvb3z ant-btn-default ant-btn-color-default ant-btn-variant-outlined revdocButton filled" type="button"> is not clickable at point (1783,132) because another element <div class="loader"> obscures it
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [aef8c1fd-e769-4321-912d-03362b65b893, sendKeysToElement {id=cd858d10-8ca3-4e68-97b7-eff7726fcb3a, value=[Ljava.lang.CharSequence;@2b960a7}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 16968, moz:profile: C:\Users\LENOVO\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (aef8c1fd-e769-4321-912d-03362b65b893)] -> xpath: //input[@id = "procedurePdf"]]
-Session ID: aef8c1fd-e769-4321-912d-03362b65b893
+Command: [e30ec8b7-57d5-49dc-913e-0406e783d157, clickElement {id=72bf3e49-9130-48fb-bd88-42ea7823d114}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6596, moz:profile: C:\Users\LENOVO\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (e30ec8b7-57d5-49dc-913e-0406e783d157)] -> xpath: //button[span[text()='+ Add New Procedure']]]
+Session ID: e30ec8b7-57d5-49dc-913e-0406e783d157
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -65,21 +65,21 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(Driver
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy28.sendKeys(Unknown Source)
-at pageObjects.ProcedureConfigurationPage.clickingOnUploadPDFButton(ProcedureConfigurationPage.java:37)
-at stepDefinitions.UploadThePDFInAddNewProcedureScreenSteps.pdfUpload(UploadThePDFInAddNewProcedureScreenSteps.java:43)
-at ✽.I should be able to upload the PDF successfully(file:///C:/Users/LENOVO/Desktop/Eclipse/RevDocAdminTestNG/src/test/resources/features/UploadThePDFInAddNewProcedureScreen.feature:8)
+at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
+at pageObjects.ProcedureConfigurationPage.clickingOnAddNewProcedrueButton(ProcedureConfigurationPage.java:31)
+at stepDefinitions.UploadThePDFInAddNewProcedureScreenSteps.NavigatingToProcedureConfiguration(UploadThePDFInAddNewProcedureScreenSteps.java:38)
+at ✽.I should be able to navigate to the procedure configuration screen and upload PDF(file:///C:/Users/LENOVO/Desktop/Eclipse/RevDocAdminTestNG/src/test/resources/features/UploadThePDFInAddNewProcedureScreen.feature:7)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunnerTestNG@6c779568]" started-at="2025-08-25T12:05:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-25T12:05:34 IST" duration-ms="17379" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunnerTestNG@6c779568]" started-at="2025-08-25T12:28:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-25T12:28:25 IST" duration-ms="19781" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -95,7 +95,7 @@ at ✽.I should be able to upload the PDF successfully(file:///C:/Users/LENOVO/D
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunnerTestNG@6c779568]" started-at="2025-08-25T12:05:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-25T12:05:49 IST" duration-ms="14856" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunnerTestNG@6c779568]" started-at="2025-08-25T12:28:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-25T12:28:42 IST" duration-ms="17127" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -115,9 +115,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [735ae355-50cf-4eb0-98e4-ece2c09092e5, findElement {using=id, value=email_help}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9616, moz:profile: C:\Users\LENOVO\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 735ae355-50cf-4eb0-98e4-ece2c09092e5]]>
+Command: [878aa87f-c8b9-4ba7-8c8a-7b3cbb09548e, findElement {value=email_help, using=id}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6596, moz:profile: C:\Users\LENOVO\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 878aa87f-c8b9-4ba7-8c8a-7b3cbb09548e]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: #email_help
@@ -125,9 +125,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [735ae355-50cf-4eb0-98e4-ece2c09092e5, findElement {using=id, value=email_help}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9616, moz:profile: C:\Users\LENOVO\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 735ae355-50cf-4eb0-98e4-ece2c09092e5
+Command: [878aa87f-c8b9-4ba7-8c8a-7b3cbb09548e, findElement {value=email_help, using=id}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6596, moz:profile: C:\Users\LENOVO\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 878aa87f-c8b9-4ba7-8c8a-7b3cbb09548e
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -144,7 +144,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy29.getText(Unknown Source)
 at pageObjects.LoginPage.getEmailErrorMsg(LoginPage.java:64)
 at stepDefinitions.LoginValidationSteps.i_should_see_message(LoginValidationSteps.java:45)
 at ✽.I should see "The email and password combination you entered is incorrect." message(file:///C:/Users/LENOVO/Desktop/Eclipse/RevDocAdminTestNG/src/test/resources/features/loginValidation.feature:11)
@@ -154,7 +154,7 @@ at ✽.I should see "The email and password combination you entered is incorrect
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunnerTestNG@6c779568]" started-at="2025-08-25T12:05:49 IST" name="tearDownClass" finished-at="2025-08-25T12:05:54 IST" duration-ms="5239" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunnerTestNG@6c779568]" started-at="2025-08-25T12:28:42 IST" name="tearDownClass" finished-at="2025-08-25T12:28:48 IST" duration-ms="5457" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
