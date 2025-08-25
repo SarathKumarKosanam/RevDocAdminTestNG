@@ -33,23 +33,16 @@ public class DriverFactory {
                 break;
 
             case "firefox":
-                System.setProperty("webdriver.gecko.driver",
-                    System.getProperty("user.dir") + "/src/test/resources/drivers/geckodriver.exe");
-
+                WebDriverManager.firefoxdriver().clearResolutionCache().setup();
                 FirefoxOptions ff = new FirefoxOptions();
                 if (headless) ff.addArguments("-headless");
                 ff.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-
                 driver = new FirefoxDriver(ff);
                 driver.manage().window().maximize();
                 break;
 
-
             case "edge":
-                // Use local driver instead of downloading from internet
-                System.setProperty("webdriver.edge.driver",
-                    System.getProperty("user.dir") + "/src/test/resources/drivers/msedgedriver.exe");
-                
+                WebDriverManager.edgedriver().clearResolutionCache().setup();
                 EdgeOptions ed = new EdgeOptions();
                 ed.setPageLoadStrategy(PageLoadStrategy.NORMAL);
                 if (headless) ed.addArguments("--headless=new");

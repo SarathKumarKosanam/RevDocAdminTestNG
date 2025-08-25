@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Aug 25 12:04:44 IST 2025</td>
+<td>Started on:</td><td>Mon Aug 25 12:27:34 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>70 seconds (70103 ms)</td>
+<tr><td>Total time:</td><td>73 seconds (73673 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,75 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='runners.TestRunnerTestNG.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Uploading Valid Test PDF", "UploadThePDFInAddNewProcedureScreenTest"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;ant-btn css-5uvb3z ant-btn-default ant-btn-color-default ant-btn-variant-outlined revdocButton filled&quot; type=&quot;button&quot;&gt; is not clickable at point (1783,132) because another element &lt;div class=&quot;loader&quot;&gt; obscures it
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [e30ec8b7-57d5-49dc-913e-0406e783d157, clickElement {id=72bf3e49-9130-48fb-bd88-42ea7823d114}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6596, moz:profile: C:\Users\LENOVO\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (e30ec8b7-57d5-49dc-913e-0406e783d157)] -&gt; xpath: //button[span[text()=&apos;+ Add New Procedure&apos;]]]
+Session ID: e30ec8b7-57d5-49dc-913e-0406e783d157
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
+	at pageObjects.ProcedureConfigurationPage.clickingOnAddNewProcedrueButton(ProcedureConfigurationPage.java:31)
+	at stepDefinitions.UploadThePDFInAddNewProcedureScreenSteps.NavigatingToProcedureConfiguration(UploadThePDFInAddNewProcedureScreenSteps.java:38)
+	at ✽.I should be able to navigate to the procedure configuration screen and upload PDF(file:///C:/Users/LENOVO/Desktop/Eclipse/RevDocAdminTestNG/src/test/resources/features/UploadThePDFInAddNewProcedureScreen.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace500985266", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace500985266'><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;ant-btn css-5uvb3z ant-btn-default ant-btn-color-default ant-btn-variant-outlined revdocButton filled&quot; type=&quot;button&quot;&gt; is not clickable at point (1783,132) because another element &lt;div class=&quot;loader&quot;&gt; obscures it
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [e30ec8b7-57d5-49dc-913e-0406e783d157, clickElement {id=72bf3e49-9130-48fb-bd88-42ea7823d114}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6596, moz:profile: C:\Users\LENOVO\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (e30ec8b7-57d5-49dc-913e-0406e783d157)] -&gt; xpath: //button[span[text()=&apos;+ Add New Procedure&apos;]]]
+Session ID: e30ec8b7-57d5-49dc-913e-0406e783d157
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
+	at pageObjects.ProcedureConfigurationPage.clickingOnAddNewProcedrueButton(ProcedureConfigurationPage.java:31)
+	at stepDefinitions.UploadThePDFInAddNewProcedureScreenSteps.NavigatingToProcedureConfiguration(UploadThePDFInAddNewProcedureScreenSteps.java:38)
+	at ✽.I should be able to navigate to the procedure configuration screen and upload PDF(file:///C:/Users/LENOVO/Desktop/Eclipse/RevDocAdminTestNG/src/test/resources/features/UploadThePDFInAddNewProcedureScreen.feature:7)
+</pre></div></td>
+<td>30</td>
+<td>runners.TestRunnerTestNG@6c779568</td></tr>
+<tr>
 <td title='runners.TestRunnerTestNG.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate email and password fields with and without input", "Login field validations"</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: #email_help
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [735ae355-50cf-4eb0-98e4-ece2c09092e5, findElement {using=id, value=email_help}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9616, moz:profile: C:\Users\LENOVO\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 735ae355-50cf-4eb0-98e4-ece2c09092e5
+Command: [878aa87f-c8b9-4ba7-8c8a-7b3cbb09548e, findElement {value=email_help, using=id}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6596, moz:profile: C:\Users\LENOVO\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 878aa87f-c8b9-4ba7-8c8a-7b3cbb09548e
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -101,19 +161,19 @@ Session ID: 735ae355-50cf-4eb0-98e4-ece2c09092e5
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.getText(Unknown Source)
 	at pageObjects.LoginPage.getEmailErrorMsg(LoginPage.java:64)
 	at stepDefinitions.LoginValidationSteps.i_should_see_message(LoginValidationSteps.java:45)
 	at ✽.I should see &quot;The email and password combination you entered is incorrect.&quot; message(file:///C:/Users/LENOVO/Desktop/Eclipse/RevDocAdminTestNG/src/test/resources/features/loginValidation.feature:11)
-</pre></div><a href='#' onClick='toggleBox("stack-trace99219259", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace99219259'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: #email_help
+</pre></div><a href='#' onClick='toggleBox("stack-trace1947910788", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1947910788'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: #email_help
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [735ae355-50cf-4eb0-98e4-ece2c09092e5, findElement {using=id, value=email_help}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9616, moz:profile: C:\Users\LENOVO\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 735ae355-50cf-4eb0-98e4-ece2c09092e5
+Command: [878aa87f-c8b9-4ba7-8c8a-7b3cbb09548e, findElement {value=email_help, using=id}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6596, moz:profile: C:\Users\LENOVO\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 878aa87f-c8b9-4ba7-8c8a-7b3cbb09548e
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -130,72 +190,12 @@ Session ID: 735ae355-50cf-4eb0-98e4-ece2c09092e5
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.getText(Unknown Source)
 	at pageObjects.LoginPage.getEmailErrorMsg(LoginPage.java:64)
 	at stepDefinitions.LoginValidationSteps.i_should_see_message(LoginValidationSteps.java:45)
 	at ✽.I should see &quot;The email and password combination you entered is incorrect.&quot; message(file:///C:/Users/LENOVO/Desktop/Eclipse/RevDocAdminTestNG/src/test/resources/features/loginValidation.feature:11)
 </pre></div></td>
-<td>14</td>
-<td>runners.TestRunnerTestNG@6c779568</td></tr>
-<tr>
-<td title='runners.TestRunnerTestNG.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Uploading Valid Test PDF", "UploadThePDFInAddNewProcedureScreenTest"</td>
-<td><div><pre>org.openqa.selenium.InvalidArgumentException: File not found: /RevDocAdminTestNG/src/test/resources/testfiles/Test PDF file.pdf
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [aef8c1fd-e769-4321-912d-03362b65b893, sendKeysToElement {id=cd858d10-8ca3-4e68-97b7-eff7726fcb3a, value=[Ljava.lang.CharSequence;@2b960a7}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 16968, moz:profile: C:\Users\LENOVO\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (aef8c1fd-e769-4321-912d-03362b65b893)] -&gt; xpath: //input[@id = &quot;procedurePdf&quot;]]
-Session ID: aef8c1fd-e769-4321-912d-03362b65b893
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.sendKeys(Unknown Source)
-	at pageObjects.ProcedureConfigurationPage.clickingOnUploadPDFButton(ProcedureConfigurationPage.java:37)
-	at stepDefinitions.UploadThePDFInAddNewProcedureScreenSteps.pdfUpload(UploadThePDFInAddNewProcedureScreenSteps.java:43)
-	at ✽.I should be able to upload the PDF successfully(file:///C:/Users/LENOVO/Desktop/Eclipse/RevDocAdminTestNG/src/test/resources/features/UploadThePDFInAddNewProcedureScreen.feature:8)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1523957322", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1523957322'><pre>org.openqa.selenium.InvalidArgumentException: File not found: /RevDocAdminTestNG/src/test/resources/testfiles/Test PDF file.pdf
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [aef8c1fd-e769-4321-912d-03362b65b893, sendKeysToElement {id=cd858d10-8ca3-4e68-97b7-eff7726fcb3a, value=[Ljava.lang.CharSequence;@2b960a7}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 16968, moz:profile: C:\Users\LENOVO\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (aef8c1fd-e769-4321-912d-03362b65b893)] -&gt; xpath: //input[@id = &quot;procedurePdf&quot;]]
-Session ID: aef8c1fd-e769-4321-912d-03362b65b893
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.sendKeys(Unknown Source)
-	at pageObjects.ProcedureConfigurationPage.clickingOnUploadPDFButton(ProcedureConfigurationPage.java:37)
-	at stepDefinitions.UploadThePDFInAddNewProcedureScreenSteps.pdfUpload(UploadThePDFInAddNewProcedureScreenSteps.java:43)
-	at ✽.I should be able to upload the PDF successfully(file:///C:/Users/LENOVO/Desktop/Eclipse/RevDocAdminTestNG/src/test/resources/features/UploadThePDFInAddNewProcedureScreen.feature:8)
-</pre></div></td>
-<td>31</td>
+<td>17</td>
 <td>runners.TestRunnerTestNG@6c779568</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -209,7 +209,7 @@ Session ID: aef8c1fd-e769-4321-912d-03362b65b893
 <tr>
 <td title='runners.TestRunnerTestNG.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Valid login", "Login feature"</td>
 <td></td>
-<td>17</td>
+<td>19</td>
 <td>runners.TestRunnerTestNG@6c779568</td></tr>
 </table><p>
 </body>

@@ -8,23 +8,41 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        browser: [chrome, firefox]   # run tests on both browsers
+
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
 
-      - name: Set up JDK
+      - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Run Tests with Maven
-        run: mvn clean test
+      - name: Run Tests with Maven (headless)
+        run: mvn clean test -Dbrowser=${{ matrix.browser }} -Dheadless=true
 
-      - name: Upload Test Reports
+      - name: Upload Cucumber Reports
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: test-reports
-          path: |
-            target/cucumber-reports
-            target/ExtentReports
+          name: cucumber-reports-${{ matrix.browser }}
+          path: target/cucumber-reports/**
+
+      - name: Upload Extent Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: extent-reports-${{ matrix.browser }}
+          path: target/ExtentReports/**
+
+      - name: Upload Screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshots-${{ matrix.browser }}
+          path: target/screenshots/**
